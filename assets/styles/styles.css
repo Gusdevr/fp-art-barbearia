@@ -10,6 +10,7 @@
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto", sans-serif;
+    background-color: #1b1b1b;
 
 }
 
@@ -237,6 +238,7 @@ nav ul a li {
     display: flex;
     height: 105px;
     z-index: 1;
+    width: 100vw;
    
 }
 
@@ -310,7 +312,7 @@ p {
    
     display: flex;
     justify-content: center;
-    background-color: #181925;
+
     width: 100vw;
     padding-bottom: 20px;
 
@@ -351,37 +353,54 @@ p {
     justify-content: center;
     color: #fff;
     width: 100vw;
+    background-color: #100f14;
+  
 
   
 
 }
 
+.carousel img {
+ margin-left: 135px;
+  
+}
+
+
 .slick-prev,
   .slick-next {
-    font-size: 24px;
-    line-height: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 50%;
     cursor: pointer;
+    /* Adicione estas propriedades para centralizar */
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Para tornar o botão circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .slick-prev {
+
     left: 20px;
   }
 
   .slick-next {
-    right: 60px;
+    right: 40px;
+    
   }
 
 
+  .section-Contact {
+    width: 100vw;
+  }
+
   .section-Contact h2{
-    background-color: #181925;
+    background-color: #1b1b1b;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -397,9 +416,9 @@ p {
     flex-direction: column;
     padding: 54px 0;
     gap: 24px;
-    background-color: #1c1e2c;
+    background-color: #000000;
     color: #fff;
-
+    width: 100vw;
    
   }
 
@@ -415,17 +434,13 @@ p {
 
   .section-footer .footer-logo .part-footer{
     
-   margin-left: 150px;
+
    max-width: 300px;
    border-radius: 10px;
     
   }
 
-  .section-footer .footer-logo .log-footer{
-    
-    margin-bottom: 70px;
-     
-   }
+
 
    @media screen and (max-width:768px) {
     .section-footer .part-footer{
