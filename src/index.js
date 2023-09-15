@@ -23,6 +23,22 @@ window.addEventListener("scroll", () => {
 });
 
 
+function menuShow() {
+    let menuMobile = document.querySelector('.menu-nav');
+    if (menuMobile.style.display === 'block') {
+      menuMobile.style.display = 'none';
+      document.querySelector('.icon').src = "assets/img/menu.png"
+    
+    } else {
+      menuMobile.style.display = 'block';
+      document.querySelector('.icon').src = "assets/img/closeicon.png"
+     
+    }
+  }
+  
+
+
+
 
 
 
